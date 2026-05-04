@@ -318,7 +318,7 @@ footer a{color:var(--yellow);text-decoration:none;}
   </div>
 
   <footer>
-    <p>📞 <a href="tel:+18293758703">829-375-8703</a> &nbsp;|&nbsp; 📍 Calle Principal El Dean Arriba/Pilancón</p>
+    <p>📞 <a href="tel:+18498516993">849-851-6993</a> &nbsp;|&nbsp; 📍 Calle Principal El Dean Arriba/Pilancón</p>
     <p style="margin-top:5px">© 2026 Mello y JDL Burguer — Hecho con 🍔 amor</p>
   </footer>
 </main>
@@ -372,7 +372,7 @@ footer a{color:var(--yellow);text-decoration:none;}
 <div class="admin-saving" id="admin-saving">💾 Guardando...</div>
 
 <!-- FLOATING CALL -->
-<a class="fab-call" href="tel:+18293758703" title="Llamar ahora">
+<a class="fab-call" href="tel:+18498516993" title="Llamar ahora">
   <div class="fab-pulse"></div>
   <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
 </a>
@@ -611,7 +611,7 @@ function sendWhatsApp() {
   if(paymentMethod) msg+=`\n💳 *Pago:* ${payLabel}\n`;
   msg+='\n¡Gracias por tu pedido! 😊🍔';
   fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({nombre:name,telefono:phone,direccion:address,pedido:detalle,total:`RD$${total}`,pago:payLabel,comentarios:comments})}).catch(()=>{});
-  window.open('https://wa.me/18293758703?text='+encodeURIComponent(msg),'_blank');
+  window.open('https://wa.me/18498516993?text='+encodeURIComponent(msg),'_blank');
   showToast('✅ ¡Pedido enviado por WhatsApp!');
 }
 
